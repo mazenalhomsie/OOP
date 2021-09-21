@@ -9,21 +9,25 @@ namespace OOP
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
             // Create a list of car.
             List<Car> carsList = new List<Car>();
-            carsList.Add(new Car_Model("Mercedes","Daimler","Sport"));
-            carsList.Add(new Car_Model("BMW", "BMW AG", "Sport"));
-            carsList.Add(new Car_Model("Audi", "VW", "Sport"));
-            Console.WriteLine("Car List:" + '\n');
            
+            carsList.Add(new Car("Daimler", "Mercedes", "Sport", 320));
+            carsList.Add(new Car("BMW AG", "BMW", "Sport", 320));
+            carsList.Add(new Car("Volkswagen AG", "Audi", "Sport", 320));
+            carsList.Add(new Car() { manufacturer = "Daimler", color = "Red", maxSpeed =240});
+           
+
+            Console.WriteLine("Car List:" + '\n');
+
             for (int i = 0; i < carsList.Count; i++)
             {
-                Console.WriteLine(carsList[i]);
+                Console.WriteLine(carsList[i].manufacturer + " " + carsList[i].marke + " " + carsList[i].variant+" "+ carsList[i].maxSpeed+" "+carsList[i].color );
             }
-            
+
             Console.ReadKey();
         }
     }

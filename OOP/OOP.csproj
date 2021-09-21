@@ -44,8 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Break.cs" />
-    <Compile Include="Car Model.cs" />
-    <Compile Include="Car.cs" />
+    <Compile Include="Models\Car Model.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Engine.cs" />
     <Compile Include="GearBoxType.cs" />
     <Compile Include="Light.cs" />
@@ -62,8 +63,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
