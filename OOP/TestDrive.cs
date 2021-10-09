@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    class test
+    class TestDrive
     {
         static Wheel Wheel1 = new Wheel();
         static Wheel Wheel2 = new Wheel();

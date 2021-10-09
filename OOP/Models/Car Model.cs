@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    class Car_Model 
+    class Car_Model
     {
-        public string title { get; private set; }
-        public void SetTitle( string _title)
-        {
-            title = _title;
-        }
+        List<Car_Model> car_Models = new List<Car_Model>();
+        public string title { get => title; private set => title = title; }
+
     }
 }

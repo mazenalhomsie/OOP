@@ -18,6 +18,7 @@ namespace OOP
         public string licenseNumber { get; set; }
         public int horsePower { get; set; }
         public Engine engine { get; set; }
+        public string Owners { get; set; }
 
 
         public Car()
